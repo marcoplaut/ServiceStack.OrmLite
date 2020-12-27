@@ -18,8 +18,8 @@ jobs:
       with:
         dotnet-version: 3.1.301
     - name: Restore dependencies
-      run: dotnet restore .src/ServiceStack.OrmLite.sln
+      run: dotnet restore ./src/ServiceStack.OrmLite.sln
     - name: Build
-      run: dotnet build .src/ServiceStack.OrmLite.sln --no-restore
+      run: dotnet build ./src/ServiceStack.OrmLite.sln --no-restore
     - name: Test
-      run: dotnet test .src/ServiceStack.OrmLite.sln --no-build --verbosity normal
+      run: dotnet test ./src/ServiceStack.OrmLite.sln --no-build --verbosity normal
